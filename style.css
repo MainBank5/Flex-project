@@ -1,3 +1,57 @@
 * {
-    background-color: aqua;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    font-size: large;
+}
+
+.logo {
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.list-items li {
+    margin: 15px;
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+@media screen and (max-width:414px) {
+    nav {
+        background-color: blue;
+    }
+    .list-items{
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
